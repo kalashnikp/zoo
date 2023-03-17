@@ -5,7 +5,7 @@ import random
 class NatureReverse():
     '''Инициализация класса заповедника / Initialization of the reserve class'''
 
-    zoo = (
+    zoo = [
         Bird(),
         Bird(),
         Bird(),
@@ -16,18 +16,28 @@ class NatureReverse():
         Fish(),
         Dog(),
         Dog(),
-        Animal(),
-        Animal()
-    )
+        Animal(random.randint(1,5), random.randint(1,5), random.randint(1,5), 'Animal'),
+        Animal(random.randint(1,5), random.randint(1,5), random.randint(1,5), 'Animal')
+    ]
     
-    def produce_offspring(self):
+        
+    def new_zoo():
         '''Функция производства потомства / to produce offspring function'''
-        
-        probability = random.choice([True, False])
-        
-        
-
-
+    
+    def prob():
+        '''Функция генерации случайного булевого значения / Generate random Bool'''
+        global b
+        b = random.choice([True, False])
+        return b
+            
+    i = 0    
+    while i < 10: 
+        prob()
+        if b == True:
+            q = random.choice([Animal(random.randint(1,5), random.randint(1,5), random.randint(1,5), 'Animal'), Bird(), Fish(), Dog()])
+            zoo.append(q)
+        i += 1    
+    
     
 
 
