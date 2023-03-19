@@ -37,6 +37,7 @@ class NatureReverse():
             q = random.choice([Animal(random.randint(1,5), random.randint(1,5), random.randint(1,5), 'Animal'), Bird(), Fish(), Dog()])
             zoo.append(q)
         i += 1    
+
     
     
 
