@@ -69,7 +69,7 @@ class NatureReverse():
             zoo.remove(item)
             print(f'{item} removed')  
                
-        print(f'we have a {i.name}\nhe has a {i.energy} energy\nhe has a {i.weight} weight \nhe a {i.age} years old\n')     
+        print(f'we have a {item.name}\nhe has a {item.energy} energy\nhe has a {item.weight} weight \nhe a {item.age} years old\n')     
 
         
 
