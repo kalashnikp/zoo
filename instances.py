@@ -8,7 +8,7 @@ class Bird(Animal):
 
     def walk(self):
         super().walk()
-        print(f'{self.name} is is flying')
+        print(f'{self.name} is flying\n')
 
     
 
@@ -20,7 +20,7 @@ class Fish(Animal):
 
     def walk(self):
         super().walk()
-        print(f'{self.name} is is swimming')
+        print(f'{self.name} is swimming\n')
 
 class Dog(Animal):
     '''Наследовательский класс животного / The dog's research class '''
@@ -30,7 +30,7 @@ class Dog(Animal):
 
     def walk(self):
         super().walk()
-        print(f'{self.name} is is swimming')
+        print(f'{self.name} is running\n')
 
 
 # elf = Fish(5, 2, 7, 'ed')
