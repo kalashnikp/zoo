@@ -4,7 +4,7 @@ from nature_reserve import NatureReverse
 
 
 
-def run(int(input())):
+def run():
     NatureReverse.life_circle()
     
     
