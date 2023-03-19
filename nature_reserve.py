@@ -4,7 +4,9 @@ import random
 
 class NatureReverse():
     '''Инициализация класса заповедника / Initialization of the reserve class'''
-
+    
+    global zoo
+    
     zoo = [
         Bird(),
         Bird(),
@@ -38,7 +40,15 @@ class NatureReverse():
             zoo.append(q)
         i += 1    
 
+
+    def do_something():
+        
+        for item in zoo:
+            print(item)
+            
+            
     
+
     
 
 

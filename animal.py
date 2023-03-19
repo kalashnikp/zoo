@@ -2,7 +2,7 @@ import random
 
 class Animal():
     '''Родительский класс животного / Parent class of the animal'''
-    age = 0
+    age = 1
     
     def __init__(self, energy, weight, max_age, name):
         self.energy = energy
