@@ -2,7 +2,9 @@ from animal import Animal
 from instances import Bird, Fish, Dog
 import random
 
-class Nature_reverce():
+
+
+class NatureReverce():
     '''Zoo class'''
     
     global zoo
@@ -42,11 +44,40 @@ class Nature_reverce():
             item.eat()
             item.walk()
             item.try_increment_age()
-        
 
-    
+    def new_amnimal(self):
+        '''To produce offspring function'''
 
-my_zoo = Nature_reverce()
+        for item in zoo:
+            
+            def prob():
+                '''Random boolean function'''
+                global b
+                b = random.choice([True, False])
+                return b # return boolean True or False
+
+            prob()
+
+            if b == True:
+                zoo.append(item) # adding a new animal in zoo list
+
+
+
+
+
+
+
+my_zoo = NatureReverce()
 my_zoo.do_something()
+my_zoo.is_dead()
+my_zoo.new_amnimal()
+
+
+for item in dead_animals:
+    print(f'{item.name} is dead\n')
+
+for item in zoo:
+    print(item.name)
+
 
 

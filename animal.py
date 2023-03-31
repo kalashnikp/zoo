@@ -58,6 +58,9 @@ class Animal():
             return self.energy, self.weight
         
 
+    
+        
+
 
         
 
