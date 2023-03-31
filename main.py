@@ -1,6 +1,6 @@
 from animal import Animal
 from instances import Bird, Fish, Dog
-from nature_reserve import NatureReverse, zoo
+from nature_reserce import NatureReverse, zoo
 
 
 
