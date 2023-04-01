@@ -9,7 +9,10 @@ class NatureReverce():
     
     global zoo
     global dead_animals
+<<<<<<< HEAD
     global new_zoo
+=======
+>>>>>>> ee6e0e38954baad2dd75581bb7246d7e93fd6745
 
     def __init__(self) -> None:
         pass
@@ -26,8 +29,12 @@ class NatureReverce():
     ]
 
     dead_animals = []
+<<<<<<< HEAD
     new_zoo = []
     
+=======
+
+>>>>>>> ee6e0e38954baad2dd75581bb7246d7e93fd6745
     def is_dead(self):
         '''Animal health check function'''
 
@@ -49,6 +56,7 @@ class NatureReverce():
 
     def new_amnimal(self):
         '''To produce offspring function'''
+<<<<<<< HEAD
         global zoo
         for items in (zoo):
             a = random.choices([1, 0], weights=[0.25, 0.75])
@@ -59,6 +67,21 @@ class NatureReverce():
                 new_zoo.append(items)
 
         zoo += new_zoo
+=======
+
+        for item in zoo:
+            
+            def prob():
+                '''Random boolean function'''
+                global b
+                b = random.choice([True, False])
+                return b # return boolean True or False
+
+            prob()
+
+            if b == True:
+                zoo.append(item) # adding a new animal in zoo list
+>>>>>>> ee6e0e38954baad2dd75581bb7246d7e93fd6745
 
 
 
@@ -71,6 +94,7 @@ my_zoo.do_something()
 my_zoo.is_dead()
 my_zoo.new_amnimal()
 
+<<<<<<< HEAD
 print(f'Животные зоопарка:')
 for item in zoo:
     print(f'{item.name}')
@@ -86,6 +110,14 @@ for item in new_zoo:
 
 
 
+=======
+
+for item in dead_animals:
+    print(f'{item.name} is dead\n')
+
+for item in zoo:
+    print(item.name)
+>>>>>>> ee6e0e38954baad2dd75581bb7246d7e93fd6745
 
 
 
