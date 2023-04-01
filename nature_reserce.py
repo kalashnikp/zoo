@@ -67,21 +67,9 @@ class NatureReverce():
 
 
 my_zoo = NatureReverce()
-my_zoo.do_something()
-my_zoo.is_dead()
-my_zoo.new_amnimal()
 
-print(f'Животные зоопарка:')
-for item in zoo:
-    print(f'{item.name}')
 
-print(f'Умершие животные:')
-for item in dead_animals:
-    print(f'{item.name} is dead')
 
-print(f'Рожденные животные:')
-for item in new_zoo:
-    print(f'{item.name} is new born')
     
 
 
