@@ -1,0 +1,64 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from animal import Animal\n",
+    "\n",
+    "class Bird(Animal):\n",
+    "    '''Наследовательский класс птицы / The bird's research class'''\n",
+    "\n",
+    "    def __init__(self, energy=2, weight=3, max_age=3, name='Bird'):\n",
+    "        super().__init__(energy, weight, max_age, name)\n",
+    "\n",
+    "    def walk(self):\n",
+    "        super().walk()\n",
+    "        print(f'{self.name} is flying\\n')\n",
+    "\n",
+    "    \n",
+    "\n",
+    "class Fish(Animal):\n",
+    "    '''Наследовательский класс рыбы / The research class of fish'''\n",
+    "\n",
+    "    def __init__(self, energy=3, weight=2, max_age=3, name='Fish'):\n",
+    "        super().__init__(energy, weight, max_age, name)\n",
+    "\n",
+    "    def walk(self):\n",
+    "        super().walk()\n",
+    "        print(f'{self.name} is swimming\\n')\n",
+    "\n",
+    "class Dog(Animal):\n",
+    "    '''Наследовательский класс животного / The dog's research class '''\n",
+    "\n",
+    "    def __init__(self, energy=4, weight=5, max_age=5, name='Dog'):\n",
+    "        super().__init__(energy, weight, max_age, name)\n",
+    "\n",
+    "    def walk(self):\n",
+    "        super().walk()\n",
+    "        print(f'{self.name} is running\\n')\n",
+    "\n",
+    "\n",
+    "# elf = Fish(5, 2, 7, 'ed')\n",
+    "\n",
+    "# elf.sleep()\n",
+    "# elf.walk()\n",
+    "# elf.eat()\n",
+    "\n",
+    "# print(elf.energy)\n",
+    "# print(elf.age)\n",
+    "# print(elf.weight)"
+   ]
+  }
+ ],
+ "metadata": {
+  "language_info": {
+   "name": "python"
+  },
+  "orig_nbformat": 4
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
