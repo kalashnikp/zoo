@@ -50,30 +50,9 @@ class NatureReverce():
     def new_amnimal(self):
         '''To produce offspring function'''
         global zoo
-        for items in (zoo):
-            a = random.choices([1, 0], weights=[0.25, 0.75])
-            b = int(''.join(map(str,a)))
-            c = bool(b)
-    
-            if c == True:
-                new_zoo.append(items)
-
+        zoo += [i for i in zoo if random.random() < 0.3]
         zoo += new_zoo
 
 
 
-
-
-
-
 my_zoo = NatureReverce()
-
-
-
-    
-
-
-
-
-
-
