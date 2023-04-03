@@ -26,17 +26,17 @@ class NatureReverce():
     def is_dead(self):
         '''Animal health check function'''
 
-        for item in self.zoo:
+        for item in NatureReverce.zoo:
             item.is_too_old() # is_too_old check
             
             if item.energy <= 0 or item.weight <=0 or item.is_too_old == True:
-                self.zoo.remove(item)
-                self.dead_animals.append(item)
+                NatureReverce.zoo.remove(item)
+                NatureReverce.dead_animals.append(item)
 
     def do_something(self):
         '''Calling the animals functions'''
 
-        for item in self.zoo:
+        for item in NatureReverce.zoo:
             item.sleep()
             item.eat()
             item.walk()
@@ -51,8 +51,8 @@ class NatureReverce():
             c = bool(b)
 
             if c == True:
-                self.new_zoo.append(item)
+                NatureReverce.new_zoo.append(item)
 
     def adding(self):
-        self.zoo += self.new_zoo
+        NatureReverce.zoo += NatureReverce.new_zoo
     

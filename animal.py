@@ -17,13 +17,13 @@ class Animal():
         b = random.choice([True, False])
 
         if b == True:
-            self.age += 1
-            return self.age
+            Animal.age += 1
+            return Animal.age
         
     def is_too_old(self):
         '''Checking the current age with the maximum / Boolean function'''
 
-        if (self.age >= self.max_age):
+        if (Animal.age >= self.max_age):
             return True
         else:
             return False
