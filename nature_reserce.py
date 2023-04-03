@@ -7,12 +7,6 @@ import random
 class NatureReverce():
     '''Zoo class'''
     
-    global zoo
-    global dead_animals
-
-    def __init__(self) -> None:
-        pass
-
     zoo = [
         Bird(),
         Bird(),
@@ -23,23 +17,26 @@ class NatureReverce():
         Animal(random.randint(1, 5), random.randint(1, 5), random.randint(1, 5), 'Animal'),
         Animal(random.randint(1, 5), random.randint(1, 5), random.randint(1, 5), 'Animal')        
     ]
-
     dead_animals = []
+    new_zoo = []
+
+    def __init__(self) -> None:
+        pass
 
     def is_dead(self):
         '''Animal health check function'''
 
-        for item in zoo:
+        for item in self.zoo:
             item.is_too_old() # is_too_old check
             
             if item.energy <= 0 or item.weight <=0 or item.is_too_old == True:
-                zoo.remove(item)
-                dead_animals.append(item)
+                self.zoo.remove(item)
+                self.dead_animals.append(item)
 
     def do_something(self):
         '''Calling the animals functions'''
 
-        for item in zoo:
+        for item in self.zoo:
             item.sleep()
             item.eat()
             item.walk()
@@ -48,36 +45,14 @@ class NatureReverce():
     def new_amnimal(self):
         '''To produce offspring function'''
 
-        for item in zoo:
-            
-            def prob():
-                '''Random boolean function'''
-                global b
-                b = random.choice([True, False])
-                return b # return boolean True or False
+        for item in self.zoo:
+            a = random.choices([1, 0], weights=[0.2, 0.8])
+            b = int(''.join(map(str, a)))
+            c = bool(b)
 
-            prob()
+            if c == True:
+                self.new_zoo.append(item)
 
-            if b == True:
-                zoo.append(item) # adding a new animal in zoo list
-
-
-
-
-
-
-
-my_zoo = NatureReverce()
-my_zoo.do_something()
-my_zoo.is_dead()
-my_zoo.new_amnimal()
-
-
-for item in dead_animals:
-    print(f'{item.name} is dead\n')
-
-for item in zoo:
-    print(item.name)
-
-
-
+    def adding(self):
+        self.zoo += self.new_zoo
+    
