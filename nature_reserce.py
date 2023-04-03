@@ -19,6 +19,8 @@ class NatureReverce():
     ]
     dead_animals = []
     new_zoo = []
+    # Требуется добавить промежуточный список (накопитель) для вхождения new_zoo, впоследствии который надо будет схлопнуть с списком zoo 
+
 
     def __init__(self) -> None:
         pass
